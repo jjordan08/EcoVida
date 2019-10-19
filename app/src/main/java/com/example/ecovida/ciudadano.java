@@ -25,6 +25,7 @@ public class ciudadano extends AppCompatActivity {
     }
 
     public void buttonReggistrar(View view){
+
         Intent intent = new Intent(ciudadano.this,registro.class);
         startActivity(intent);
     }
