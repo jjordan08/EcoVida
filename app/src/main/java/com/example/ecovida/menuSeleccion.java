@@ -22,5 +22,6 @@ public class menuSeleccion extends AppCompatActivity {
     public void buttonCiudadano(View view){
         Intent intent = new Intent(menuSeleccion.this, ciudadano.class);
         startActivity(intent);
+        ///hola jorge
     }
 }

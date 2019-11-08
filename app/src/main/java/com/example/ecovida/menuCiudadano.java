@@ -20,7 +20,7 @@ public class menuCiudadano extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void buttonConsultarArbol(View view){
+    public void buttonRegistroArbol(View view){
         Intent intent = new Intent(menuCiudadano.this,consultarArbol.class);
         startActivity(intent);
     }

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".reportes"></activity>
+        <activity android:name=".eliminar"></activity>
+        <activity android:name=".registroEdicion" />
+        <activity android:name=".reportes" />
         <activity android:name=".registrarArbol" />
         <activity android:name=".reportarEmergenia" />
         <activity android:name=".escanearCodigo" />
