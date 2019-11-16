@@ -16,12 +16,12 @@ public class registro extends AppCompatActivity {
     }
 
     public void buttonRegresar(View view){
-        Intent intent = new Intent(registro.this,ciudadano.class);
+        Intent intent = new Intent(registro.this, ingreso.class);
         startActivity(intent);
     }
 
     public void buttonRegistrar(View view){
-        Intent intent = new Intent(registro.this,ciudadano.class);
+        Intent intent = new Intent(registro.this, ingreso.class);
         Toast.makeText(this, "Se ha registrado Correcatamente", Toast.LENGTH_SHORT).show();
         startActivity(intent);
     }

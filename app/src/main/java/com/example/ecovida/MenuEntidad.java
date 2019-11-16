@@ -15,11 +15,11 @@ public class MenuEntidad extends AppCompatActivity {
         setContentView(R.layout.activity_menu_entidad);
     }
 
-    public void buttonRegresar(View view){
+    /*public void buttonRegresar(View view){
         Intent intent = new Intent(MenuEntidad.this,entidada.class);
         startActivity(intent);
     }
-
+*/
     public void buttonRegistrarNuevo(View view){
         Intent intent = new Intent(MenuEntidad.this,registroEdicion.class);
         startActivity(intent);
