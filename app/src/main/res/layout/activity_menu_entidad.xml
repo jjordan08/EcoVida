@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
-        android:text="Funcionario:  1018412644"
+        android:text="Servidor:  1018412644"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/button20"
         app:layout_constraintEnd_toEndOf="parent"

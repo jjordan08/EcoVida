@@ -25,6 +25,10 @@ public class ingreso extends AppCompatActivity implements View.OnClickListener {
     private EditText TextPassword;
     private Button btnRegistrar;
     private ProgressDialog progressDialog;
+    public String user =  "user";
+    public String servidor =  "servidor";
+    public String clave =  "admin";
+
 
     //Declaramos un objeto firebaseAuth
     private FirebaseAuth firebaseAuth;
@@ -52,9 +56,19 @@ public class ingreso extends AppCompatActivity implements View.OnClickListener {
 
     private void ingresar(){
 
+
         //Obtenemos el email y la contraseña desde las cajas de texto
         final String email = TextEmail.getText().toString().trim();
         String password  = TextPassword.getText().toString().trim();
+
+        if ((email.equals(user)) && (password.equals(clave))) {
+            Intent i = new Intent(ingreso.this, menuCiudadano.class);
+            startActivity(i);
+        }
+        else if ((email.equals(servidor)) && (password.equals(clave))){
+            Intent i = new Intent(ingreso.this, MenuEntidad.class);
+            startActivity(i);
+        }
 
         //Verificamos que las cajas de texto no esten vacías
         if(TextUtils.isEmpty(email)){
@@ -77,11 +91,13 @@ public class ingreso extends AppCompatActivity implements View.OnClickListener {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         //checking if success
-                        if(task.isSuccessful()){
 
+                        if(task.isSuccessful()){
+                            int pos = email.indexOf("@");//verifica el caracter donde se encuentra en el email
+                            String user = email.substring(0,pos);// envia el email hasta donde se encuentra la posicion de la @
                             Toast.makeText(ingreso.this,"Hola: "+ TextEmail.getText(),Toast.LENGTH_LONG).show();
                             Intent intent = new Intent(ingreso.this,menuCiudadano.class);
-                            intent.putExtra(menuCiudadano.user, email);
+                            intent.putExtra(menuCiudadano.user, user);
                             startActivity(intent);
 
                             } else {

@@ -28,7 +28,7 @@ public class menuCiudadano extends AppCompatActivity {
     }
 
     public void buttonRegistroArbol(View view){
-        Intent intent = new Intent(menuCiudadano.this,consultarArbol.class);
+        Intent intent = new Intent(menuCiudadano.this,solicitudRegistroArbol.class);
         startActivity(intent);
     }
 
