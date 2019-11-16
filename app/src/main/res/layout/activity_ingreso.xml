@@ -6,10 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".ingreso">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".entidada">
 
         <EditText
             android:id="@+id/password"
@@ -65,8 +61,8 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="140dp"
-            android:layout_height="47dp"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
             android:layout_marginEnd="60dp"
             android:layout_marginBottom="20dp"
             android:onClick="buttonIngresar"
@@ -78,13 +74,13 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="141dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="92dp"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
             android:onClick="buttonReggistrar"
             android:text="Registrarse"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
