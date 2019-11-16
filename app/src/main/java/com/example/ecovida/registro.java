@@ -16,6 +16,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 public class registro extends AppCompatActivity implements View.OnClickListener {
 
@@ -79,15 +80,19 @@ public class registro extends AppCompatActivity implements View.OnClickListener 
                         if(task.isSuccessful()){
 
                             Toast.makeText(registro.this,"Se ha registrado el usuario con el email: "+ TextEmail.getText(),Toast.LENGTH_LONG).show();
-                        }else{
-
-                            Toast.makeText(registro.this,"No se pudo registrar el usuario ",Toast.LENGTH_LONG).show();
+                        }else {
+                            if (task.getException() instanceof FirebaseAuthUserCollisionException) {//si se presenta colicion o esta registrado
+                                Toast.makeText(registro.this, "Ya existe el usuario ", Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(registro.this, "No se pudo registrar el usuario ", Toast.LENGTH_LONG).show();
+                            }
                         }
                         progressDialog.dismiss();
                     }
                 });
 
     }
+
 
     @Override
     public void onClick(View view) {
