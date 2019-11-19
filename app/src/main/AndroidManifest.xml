@@ -14,7 +14,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".solicitudRegistroArbol"></activity>
         <activity android:name=".eliminar" />
-        <activity android:name=".registroEdicion" />
         <activity android:name=".reportes" />
         <activity android:name=".registrarArbol" />
         <activity android:name=".reportarEmergenia" />

@@ -45,18 +45,6 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button17"
-        android:layout_width="178dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="28dp"
-        android:onClick="buttonEscanearEliminar"
-        android:text="Escanear codigo para eliminar"
-        app:layout_constraintBottom_toTopOf="@+id/button14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
         android:id="@+id/button16"
         android:layout_width="178dp"
         android:layout_height="51dp"
@@ -72,11 +60,11 @@
         android:id="@+id/editText5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="136dp"
         android:ems="10"
         android:hint="Digite codigo arbol"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/button17"
+        app:layout_constraintBottom_toTopOf="@+id/button14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

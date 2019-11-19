@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -44,9 +43,7 @@ public class ingreso extends AppCompatActivity implements View.OnClickListener {
         //Referenciamos los views
         TextEmail = (EditText) findViewById(R.id.user);
         TextPassword = (EditText) findViewById(R.id.password);
-
         btnRegistrar = (Button) findViewById(R.id.button5);
-
         progressDialog = new ProgressDialog(this);
 
         //attaching listener to button
