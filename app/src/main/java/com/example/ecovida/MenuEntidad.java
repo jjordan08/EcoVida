@@ -31,19 +31,11 @@ public class MenuEntidad extends AppCompatActivity {
     }
 
     public void buttonRegistrarNuevo(View view){
-        Intent intent = new Intent(MenuEntidad.this,registroEdicion.class);
+        Intent intent = new Intent(MenuEntidad.this,registrarArbol.class);
         startActivity(intent);
     }
 
-    public void buttonEditar(View view){
-        Intent intent = new Intent(MenuEntidad.this,registroEdicion.class);
-        startActivity(intent);
-    }
 
-    public void buttonEliminar(View view){
-        Intent intent = new Intent(MenuEntidad.this,eliminar.class);
-        startActivity(intent);
-    }
 
     public void buttonEscanearCodigo(View view){
         Intent intent = new Intent(MenuEntidad.this,escanearCodigo.class);
